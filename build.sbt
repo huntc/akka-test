@@ -3,6 +3,7 @@ lazy val `no-idea` = project
   .enablePlugins(AutomateHeaderPlugin, GitVersioning)
 
 libraryDependencies ++= Vector(
+  Library.akkaHttpExperimental,
   Library.scalaTest % "test"
 )
 
